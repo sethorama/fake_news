@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Category</th>
       <th>Title</th>
       <th>Body</th>
       <th colspan="3"></th>
@@ -14,6 +15,7 @@
   <tbody>
     <% @articles.each do |article| %>
       <tr>
+        <td><%= article.category %></td>
         <td><%= article.title %></td>
         <td><%= article.body %></td>
         <td><%= link_to 'Show', article %></td>

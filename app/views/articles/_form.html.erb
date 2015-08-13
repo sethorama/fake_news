@@ -10,7 +10,10 @@
       </ul>
     </div>
   <% end %>
-
+  <%= f.label :category %><br />
+  <%= f.select :category do %> 
+  <%= options_for_select([['World News'], ['Politics'], ['Entertainment']]) %>
+  <% end %>
   <div class="field">
     <%= f.label :title %><br>
     <%= f.text_field :title %>
